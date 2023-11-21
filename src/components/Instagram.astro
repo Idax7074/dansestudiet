@@ -1,0 +1,51 @@
+<section class="instagram">
+    <h2>Følg med på Instagram</h2>
+    <a href="https://www.instagram.com/dansestudietaarhus/">@dansestudietaarhus</a>
+    <article class="grid_4-2">
+    <a href="https://www.instagram.com/dansestudietaarhus/"><img class="ig_1" src="/img/ig_1.webp" alt="til en dansetime"></a>
+     <a href="https://www.instagram.com/dansestudietaarhus/"> <img class="ig_2" src="/img/ig_2.webp" alt="julevisning den 17. december"></a>
+     <a href="https://www.instagram.com/dansestudietaarhus/"> <img class="ig_3" src="/img/ig_3.webp" alt="til en bongo dansetime"></a>
+    <a href="https://www.instagram.com/dansestudietaarhus/"> <img class="ig_4" src="/img/ig_4.webp" alt="breakdance"></a> 
+    <a href="https://www.instagram.com/dansestudietaarhus/"> <img class="ig_5" src="/img/ig_5.webp" alt="til en ballet time"></a> 
+     <a href="https://www.instagram.com/dansestudietaarhus/"> <img class="ig_6" src="/img/ig_6.webp" alt="danseopvisning"></a>
+     <a href="https://www.instagram.com/dansestudietaarhus/"> <img class="ig_7" src="/img/ig_7.webp" alt="dansehold"></a>
+      <a href="https://www.instagram.com/dansestudietaarhus/"><img class="ig_8" src="/img/ig_8.webp" alt="danseopvisning"></a>
+    </article>
+  </section>
+
+<style>
+    h2{
+        color: var( --color-text-headline-2: #0a0a0a;);
+    }
+    a{
+        color: var( --color-text-headline-2: #0a0a0a;);
+    }
+.instagram{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-inline: auto;
+width: 69.5625rem;
+gap: var(--spacing-gap-instagram: 2.5rem;);
+flex-wrap: wrap;
+}
+
+.grid_4-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 2%;
+  }
+
+  .grid_4-2 img {
+    width: 95%;
+    height: 95%;
+  }
+
+  .ig_1, .ig_2, .ig_3, .ig_4, .ig_5, .ig_6, .ig_7, .ig_8{
+    filter: grayscale(100%);
+  }
+  .ig_1:hover, .ig_2:hover,.ig_3:hover,.ig_4:hover,.ig_5:hover,.ig_6:hover,.ig_7:hover,.ig_8:hover{
+    filter: grayscale(0);
+  }
+
+</style>
