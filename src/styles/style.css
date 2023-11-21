@@ -1,2 +1,67 @@
 :root {
+  /*Baggrunds farver*/
+  --color-background-primary: #fff;
+  --color-background-secondary: #196572;
+  --color-background-tertiary: #ffeda0;
+  --color-background-footer: #196572;
+  --color-background-background-card: #fff8e1;
+  --color-background-stroke-card: #196572;
+
+  /*Tekst farver*/
+  --color-text-display: #fff;
+  --color-text-headline-2: #0a0a0a;
+  --color-text-headline-3: #fff;
+  --color-text-body-primary: #fff;
+  --color-text-body-secondary: #0a0a0a;
+  --color-text-nav: #196572;
+  --color-text-footer: #fff;
+
+  /*Knap farver*/
+  --color-button-text: #196572;
+  --color-button-background: #ffeda0;
+  --color-button-text-2: #ffeda0;
+  --color-button-background-2: #196572;
+
+  /*Ikon farver*/
+  --color-icon-background: #ffeda0;
+  --color-icon-text: #4c4645;
+
+  /*Typografi*/
+  --Display-large: 4.29938rem;
+  --Display-medium: 2.98563rem;
+  --Display-small: 2.07375rem;
+
+  --Headline2-large: 1.72813rem;
+  --Headline2-medium: 1.44rem;
+  --Headline2-small: 1.2rem;
+
+  --Headline3-large: 1.44rem;
+  --Headline3-medium: 1.2rem;
+  --Headline3-small: 1rem;
+
+  --Label-large: 1rem;
+  --Label-medium: 0.83313rem;
+  --Label-small: 0.69438rem;
+
+  --Body-large: 1rem;
+  --Body-medium: 0.83313rem;
+  --Body-small: 0.69438rem;
+}
+
+@font-face {
+  font-family: "DansestudietDisplay";
+  src: url("DansestudietDisplay1.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DansestudietSimple";
+  src: url("DansestudietSimple.ttf") format("ttf");
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
