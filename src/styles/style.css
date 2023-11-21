@@ -5,7 +5,10 @@
   --color-background-tertiary: #ffeda0;
   --color-background-footer: #196572;
   --color-background-background-card: #fff8e1;
+
   --color-background-stroke-card: #196572;
+  --color-button-stroke: #ffeda0;
+  --color-button-stroke-2: #196572;
 
   /*Tekst farver*/
   --color-text-display: #fff;

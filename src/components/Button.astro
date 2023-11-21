@@ -1,0 +1,56 @@
+---
+const {variant} = Astro.props
+---
+
+<button class={variant}> <p><slot/></p> </button>
+
+<style>
+    button {
+        display: flex;
+        width: 6.0625rem;
+        padding: var(--spacing-vertical-lg, 0.625rem) var(--spacing-horizontal-lg, 1.25rem);
+        justify-content: space-between;
+        align-items: center;
+        border-radius: var(--radius-rounded-2, 0.625rem);
+    }
+
+    button p {
+        font-family: "DansestudietSimple";
+        font-size: var(--Label-large);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .primary {
+        color: var(--color-button-text);
+        background: var(--color-button-background);
+    }
+
+    .primary:hover {
+        background: var(--color-button-background-hover-1);
+        color: var(--color-button-text-hover);
+    }
+
+    .secondary {
+        color: var(--color-button-text);
+        background: var(--color-button-background);
+    }
+
+    .secondary:hover {
+        border: 1px solid var(--color-button-stroke);
+        background: var(--color-button-background-hover-2);
+        color: var(--color-button-text-hover);
+    }
+
+    .tertiary {
+        background: var(--color-button-background-2);
+        color: var(--color-button-text-2);
+    }
+
+    .tertiary:hover {
+        border: 1px solid var(--color-button-stroke-2);
+        background: var(--color-button-background-hover-2);
+        color: var(--color-button-text);
+    }
+</style>
