@@ -46,6 +46,24 @@
   --Body-large: 1rem;
   --Body-medium: 0.83313rem;
   --Body-small: 0.69438rem;
+
+  /*Padding*/
+  --spacing-vertical-lg: 0.625rem;
+  --spacing-horizontal-lg: 1.25rem;
+
+  --spacing-gap-card-padding-vertical: 2.5rem;
+  --spacing-gap-card-padding-horizontal: 1.875rem;
+
+  /*Radius*/
+  --radius-rounded-1: 0.3125rem;
+  --radius-rounded-2: 0.625rem;
+  --radius-pill: 99999rem;
+
+  /*Gap*/
+  --spacing-gap-hero: 4.0625rem;
+  --spacing-gap-section: 1.875rem;
+  --spacing-gap-card-text: 1.875rem;
+  --spacing-gap-instagram: 2.5rem;
 }
 
 @font-face {
