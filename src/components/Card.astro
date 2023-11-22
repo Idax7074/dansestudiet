@@ -1,0 +1,28 @@
+---
+const {title, description, img} = Astro.props
+import Button from "./Button.astro";
+---
+
+<article>
+    <img src={img} alt="Billede over program fra dansestudiet">
+    <h3>{title}</h3>
+    <p>{description}</p>
+    <Button variant="primary">Bliv en del af troppen!</Button>
+</article>
+
+<style>
+article {
+display: inline-flex;
+max-width: 32.1875rem;
+padding: var(--spacing-gap-card-padding-vertical, 2.5rem) var(--spacing-gap-card-padding-horizontal, 1.875rem);
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: var(--spacing-gap-card-text, 1.875rem);
+
+border-radius: var(--radius-rounded-1, 0.3125rem);
+border: 5px solid var(--color-background-stroke-card, #196572);
+background: var(--color-background-background-card, #FFF8E1);
+}
+
+</style>
