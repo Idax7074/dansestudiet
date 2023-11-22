@@ -1,10 +1,40 @@
 ---
 import MainLayout from "../layout/MainLayout.astro";
 import Instagram from "../components/Instagram.astro";
+import Button from "../components/Button.astro";
+import Card from "../components/Card.astro";
 ---
 
 <MainLayout title="Dansestudiet">
+	<section class="grid_1">
+		<div>
+			<img src="/img/forside.webp" alt="Billede fra Dansestudiet">
+		</div>
+		<div>
+			<h1>Velkommen til dansestudiet</h1>
+			<p></p>
+			<Button variant="secondary">Bliv en del af troppen!</Button>
+		</div>
+	</section>
 	<section>
-<Instagram></Instagram>
+		<div>
+			<h2></h2>
+			<p></p>
+			<Button variant="tertiary">Mød dem her</Button>
+		</div>
+	</section>
+	<section class="grid_1">
+		<Card> </Card>
+		<Card> </Card>
+	</section>
+	<section>
+		<Instagram/>
 	</section>
 </MainLayout>
+
+<style>
+	.grid_1 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+</style>

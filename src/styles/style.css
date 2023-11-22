@@ -5,6 +5,7 @@
   --color-background-tertiary: #ffeda0;
   --color-background-footer: #196572;
   --color-background-background-card: #fff8e1;
+  --color-button-background-hover-2: rgba(255, 255, 255, 0);
 
   --color-background-stroke-card: #196572;
   --color-button-stroke: #ffeda0;
@@ -18,6 +19,7 @@
   --color-text-body-secondary: #0a0a0a;
   --color-text-nav: #196572;
   --color-text-footer: #fff;
+  --color-button-text-hover: #ffeda0;
 
   /*Knap farver*/
   --color-button-text: #196572;
@@ -85,4 +87,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-family: DansestudietDisplay1;
+  font-size: var(--Display-large);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  width: 34.5rem;
+  color: var(--color-text-display);
 }
