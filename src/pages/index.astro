@@ -25,12 +25,14 @@ import Card from "../components/Card.astro";
 			<Button variant="tertiary">Mød dem her</Button>
 		</div>
 	</section>
-	<section class="grid_1">
+	<section class="grid_1_1">
 		<Card
+		variant="primary"
 		img="/img/workshop.webp"
 		title="Anna Zacho"
 		description="Anna Zacho, medstifter af “The Edge Dance Space” kommer hjem fra London for at give en Commercial Performance workshop med lækker energi. Lad os danse sammen til den sidste MW i pr."/>
 		<Card
+		variant="secondary"
 		img="/img/workshop2.webp"
 		title="Julia Testa"
 		description="Den brasilianske performer og kunstner, Julia Testa, besøger Aarhus og giver en workshop i den spændende contemporary floorwork teknik “Flying-Low” samt “Passing Through” teknik skabt af Dvid Zambrano."/>
@@ -44,6 +46,15 @@ import Card from "../components/Card.astro";
 	.grid_1 {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+	}
+
+	.grid_1_1 {
+		display: flex;
+width: 80.0625rem;
+padding: 0rem 5.625rem;
+align-items: center;
+gap: 4.0625rem;
+margin-inline: auto;
 	}
 
 .hero_section{

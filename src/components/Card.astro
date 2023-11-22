@@ -1,9 +1,9 @@
 ---
-const {title, description, img} = Astro.props
+const {variant, title, description, img} = Astro.props
 import Button from "./Button.astro";
 ---
 
-<article>
+<article class={variant}>
     <img src={img} alt="Billede over program fra dansestudiet">
     <h3>{title}</h3>
     <p>{description}</p>
@@ -11,7 +11,14 @@ import Button from "./Button.astro";
 </article>
 
 <style>
-article {
+
+    article {
+        border-radius: var(--radius-rounded-1, 0.3125rem);
+border: 5px solid var(--color-background-stroke-card, #196572);
+background: var(--color-background-background-card, #FFF8E1);
+margin-inline: auto;
+    }
+.primary {
 display: inline-flex;
 max-width: 32.1875rem;
 padding: var(--spacing-gap-card-padding-vertical, 2.5rem) var(--spacing-gap-card-padding-horizontal, 1.875rem);
@@ -19,11 +26,18 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: var(--spacing-gap-card-text, 1.875rem);
+}
 
-border-radius: var(--radius-rounded-1, 0.3125rem);
-border: 5px solid var(--color-background-stroke-card, #196572);
-background: var(--color-background-background-card, #FFF8E1);
-margin-inline: auto;
+.secondary {
+    display: flex;
+width: 32.1875rem;
+padding: var(--spacing-gap-card-padding-horizontal, 1.875rem) var(--spacing-gap-card-text, 1.875rem);
+justify-content: center;
+align-items: flex-start;
+align-content: flex-start;
+gap: 1.875rem var(--spacing-gap-card-text, 1.875rem);
+flex-shrink: 0;
+flex-wrap: wrap;
 }
 
 </style>
