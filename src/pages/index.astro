@@ -18,9 +18,10 @@ import Card from "../components/Card.astro";
 		</div>
 	</section>
 	<section>
-		<div>
-			<h2></h2>
-			<p></p>
+		<div class="section_2">
+			<h2>Vi har 25 kompetente undervisere</h2>
+			<p>På Dansestudiet lægger vi et stort arbejde i at ansætte de mest kompetente og dygtige undervisere indenfor dansebranchen. Alle er nøje udvalgt og bidrager med en specialiseret viden og erfaring indenfor netop deres dansegenre. 
+			</p>
 			<Button variant="tertiary">Mød dem her</Button>
 		</div>
 	</section>
@@ -59,7 +60,13 @@ gap: var(--spacing-gap-hero, 65px);
 	width: 500px;
 	
 }
+.section_2{
+	background-color: var( --color-background-tertiary, #ffeda0) ;
+}
 
+.section_2 p{
+	color: var(  --color-text-body-secondary, #0a0a0a);
+}
 
 	/*Hero section*/ 
 
