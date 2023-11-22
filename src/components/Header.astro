@@ -34,14 +34,6 @@
     align-items: center;
   }
 
-  .shop a {
-    color: var(--color-text-nav);
-  }
-
-  .shop a:hover {
-    color: var(--black);
-  }
-
   img {
     width: 25%;
     height: auto;
@@ -56,20 +48,7 @@
     min-height: 44px;
   }
 
-  .shop {
-    display: flex;
-    align-items: center;
-  }
-
-  .shop li {
-    padding-inline: 20px;
-    list-style: none;
-  }
-
   @media (min-width: 1201px) {
-    header {
-      position: fixed;
-    }
 
     .logo {
       padding-left: 7%;
@@ -91,6 +70,8 @@
       float: left;
       position: relative;
       width: auto;
+
+      list-style: none;
     }
 
     nav li:hover a {
@@ -98,10 +79,18 @@
     }
 
     nav a {
-      color: var(--dark-brown);
+      color: var(--color-text-nav);
       display: block;
       padding: 15px 70px;
       transition: all 0.25s ease;
+
+      text-decoration: none;
+      font-family: Lato;
+      font-size: var(--Headline3-large);
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+
     }
 
     nav a:active {
@@ -112,7 +101,7 @@
 
   @media (max-width: 1200px) {
     .banner {
-      background-color: #d0c7be;
+      background-color: var(--color-background-primary);
       padding: 2rem;
 
       display: flex;
@@ -122,7 +111,7 @@
       gap: 20px 40px;
     }
     .menu.shown a {
-      color: var(--dark-brown);
+      color: var(--color-text-nav);
       text-decoration: none;
       line-height: 1.5rem;
     }
@@ -148,7 +137,7 @@
     }
 
     .menu.shown > ul {
-      border-top: 1px solid var(--black);
+      border-top: 1px solid var(--color-text-nav);
       padding-top: 1rem;
     }
 
@@ -165,7 +154,7 @@
     .bar3 {
       width: 35px;
       height: 5px;
-      background-color: var(--black);
+      background-color: black;
       margin: 6px 0;
       border-radius: 5px;
       transition: 0.4s;
