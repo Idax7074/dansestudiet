@@ -7,7 +7,7 @@ import Button from "./Button.astro";
     <img src={img} alt="Billede over program fra dansestudiet">
     <h3>{title}</h3>
     <p>{description}</p>
-    <Button variant="primary">Bliv en del af troppen!</Button>
+    <Button variant="tertiary">Bliv en del af troppen!</Button>
 </article>
 
 <style>
@@ -17,6 +17,7 @@ import Button from "./Button.astro";
 border: 5px solid var(--color-background-stroke-card, #196572);
 background: var(--color-background-background-card, #FFF8E1);
 margin-inline: auto;
+color: var(--color-text-body-secondary);
     }
 .primary {
 display: inline-flex;
