@@ -12,7 +12,7 @@ import Card from "../components/Card.astro";
 		</div>
 		<div class="hero_section">
 			<h1>Velkommen til dansestudiet</h1>
-			<p>Hos os kan du opleve, Experimental Contemporary, Afro, House, Street jazz, Commercial Femme, Hip Hop, Moderne dans, Smidighedstrækning, Breakdance, Fusion Contemporary, Yoga, Waacking, Workshops m.m. 
+			<p class="text">Hos os kan du opleve, Experimental Contemporary, Afro, House, Street jazz, Commercial Femme, Hip Hop, Moderne dans, Smidighedstrækning, Breakdance, Fusion Contemporary, Yoga, Waacking, Workshops m.m. 
 				Vi har mere end 50 danseklasser om ugen for alle aldre og niveauer! </p>
 			<Button variant="secondary">Bliv en del af troppen!</Button>
 		</div>
@@ -54,8 +54,9 @@ align-items: center;
 gap: var(--spacing-gap-hero, 65px);
 
 }
-.hero_section, p{
-	color: var(--color-text-body-primary, #fff) ;
+.hero_section p{
+	color: var(--color-text-body-primary, #fff);
+	width: 500px;
 	
 }
 
