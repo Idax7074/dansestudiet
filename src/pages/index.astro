@@ -10,9 +10,10 @@ import Card from "../components/Card.astro";
 		<div>
 			<img src="/img/forside.webp" alt="Billede fra Dansestudiet">
 		</div>
-		<div>
+		<div class="hero_section">
 			<h1>Velkommen til dansestudiet</h1>
-			<p></p>
+			<p>Hos os kan du opleve, Experimental Contemporary, Afro, House, Street jazz, Commercial Femme, Hip Hop, Moderne dans, Smidighedstrækning, Breakdance, Fusion Contemporary, Yoga, Waacking, Workshops m.m. 
+				Vi har mere end 50 danseklasser om ugen for alle aldre og niveauer! </p>
 			<Button variant="secondary">Bliv en del af troppen!</Button>
 		</div>
 	</section>
@@ -44,6 +45,19 @@ import Card from "../components/Card.astro";
 		grid-template-columns: 1fr 1fr;
 	}
 
+.hero_section{
+	background-color: var(--color-background-secondary, #196572);
+	display: inline-flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: var(--spacing-gap-hero, 65px);
+
+}
+.hero_section, p{
+	color: var(--color-text-body-primary, #fff) ;
+	
+}
 
 
 	/*Hero section*/ 
