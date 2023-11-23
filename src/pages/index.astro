@@ -25,8 +25,9 @@ import Card from "../components/Card.astro";
 			<Button variant="tertiary">Mød dem her</Button>
 		</div>
 	</section>
-	<section class="workshop">
+	<div class="workshop">
 		<h2>Workshop</h2>
+	</div>
 		<div class="grid_1_1">
 		<Card
 		variant="primary"
@@ -59,7 +60,7 @@ import Card from "../components/Card.astro";
 		gap: 4.0625rem;
 		margin-inline: auto;
 		
-		margin-bottom: 150px;
+		margin-bottom: 100px;
 	}
 
 	.hero_section{
@@ -92,10 +93,14 @@ import Card from "../components/Card.astro";
 }
 
 	.yellow {
-	margin-bottom: 150px;
+	margin-bottom: 100px;
 }
 
 .workshop {
+	margin-inline: auto;
+	text-align: center;
+	margin-bottom: 100px;
+	color: var(--color-text-headline-2, #0a0a0a);
 }
 
 	.section_2 p {
