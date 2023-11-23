@@ -98,7 +98,7 @@ svg {
 }
 
 h1 {
-  font-family: DansestudietDisplay1;
+  font-family: "DansestudietDisplay1", sans-serif;
   font-size: var(--Display-large);
   font-style: normal;
   font-weight: 400;
@@ -109,7 +109,7 @@ h1 {
 }
 
 h2 {
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: var(--Headline2-large);
   font-style: normal;
   font-weight: 700;
@@ -117,7 +117,7 @@ h2 {
 }
 
 h3 {
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: var(--Headline3-large);
   font-style: normal;
   font-weight: 700;
@@ -125,9 +125,27 @@ h3 {
 }
 
 p {
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-size: var(--Body-large);
   font-style: normal;
   font-weight: 300;
   line-height: 150%;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: var(--Display-small);
+  }
+
+  h2 {
+    font-size: var(--Headline2-small);
+  }
+
+  h3 {
+    font-size: var(--Headline3-small);
+  }
+
+  p {
+    font-size: var(--Body-small);
+  }
 }

@@ -1,6 +1,8 @@
-<section class="instagram">
+<section>
+  <div class="instagram">
     <h2>Følg med på Instagram</h2>
     <a href="https://www.instagram.com/dansestudietaarhus/">@dansestudietaarhus</a>
+    </div>
     <article class="grid_4-2">
     <a href="https://www.instagram.com/dansestudietaarhus/"><img class="ig_1" src="/img/ig_1.webp" alt="til en dansetime"></a>
      <a href="https://www.instagram.com/dansestudietaarhus/"> <img class="ig_2" src="/img/ig_2.webp" alt="julevisning den 17. december"></a>
@@ -19,6 +21,7 @@
     }
     a{
         color: var( --color-text-headline-2, #0a0a0a);
+        margin-top: 5px;
     }
 .instagram{
 display: flex;
@@ -34,6 +37,9 @@ flex-wrap: wrap;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 2%;
+
+    width: 90rem;
+    margin-inline: auto;
   }
 
   .grid_4-2 img {
@@ -47,5 +53,15 @@ flex-wrap: wrap;
   .ig_1:hover, .ig_2:hover,.ig_3:hover,.ig_4:hover,.ig_5:hover,.ig_6:hover,.ig_7:hover,.ig_8:hover{
     filter: grayscale(0);
   }
+
+  @media(max-width:900px) {
+    .instagram {
+      width: 30px;
+    }
+
+    .grid_4-2 {
+      width: 30rem;
+    }
+    
 
 </style>

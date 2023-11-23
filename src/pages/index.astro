@@ -52,17 +52,6 @@ import Card from "../components/Card.astro";
 		grid-template-columns: 1fr 1fr;
 	}
 
-	.grid_1_1 {
-		display: flex;
-		width: 80.0625rem;
-		padding: 0rem 5.625rem;
-		align-items: center;
-		gap: 4.0625rem;
-		margin-inline: auto;
-		
-		margin-bottom: 100px;
-	}
-
 	.hero_section{
 	background-color: var(--color-background-secondary, #196572);
 	display: inline-flex;
@@ -78,7 +67,6 @@ import Card from "../components/Card.astro";
 	width: 500px;
 	
 }
-
 	.section_2{
 	display: flex;
 	width: auto;
@@ -106,4 +94,39 @@ import Card from "../components/Card.astro";
 	.section_2 p {
 	width: 700px;
 }
+
+@media (min-width: 1001px) {
+	.grid_1_1 {
+		display: flex;
+		flex-direction: row;
+		width: 80.0625rem;
+		padding: 0rem 5.625rem;
+		align-items: center;
+		gap: 4.0625rem;
+		margin-inline: auto;
+		
+		margin-bottom: 100px;
+	}
+}
+
+@media (max-width: 900px) {
+
+	.grid_1 {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	.hero_section p{
+	color: var(--color-text-body-primary, #fff);
+	width: 450px;
+	
+}
+
+.section_2 p {
+	width: 450px;
+}
+
+}
+
 </style>
